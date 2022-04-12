@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Yaroslav Website">
+    <!--Page keywords-->
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <!--Author of the code-->
+    <meta name="author" content="Mishchenko Yaroslav">
+    <meta http-equiv="refresh" content="30">
+    <!-- Lets make mobile version looks cool-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize CSS install-->
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/0eeec2859d.js" crossorigin="anonymous"></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--SPLIDE JS-->
+    <script src="../../js/splide.min.js"></script>
+    <!--SPLIDE CSS-->
+    <link rel="stylesheet" href="../../css/splide.min.css">
+    <!--MMENU-->
+    <script src="../../js/mmenu-light.js"></script>
+
+    <link rel="stylesheet" href="../../css/mmenu-light.css">
+
+    <!--END OF MMENU-->
+
+    <title>Yaroslav Mishchenko Resume</title>
+</head>
+
+<body id="top">
+    <article class="grid-container-etsy">
+        <!--Header section-->
+        <section class="grid-item-1-etsy">
+            <header>
+                <a href="../../index.html">
+                    <img class="logo" src="../../img/Artboard 1.png" alt="logo">
+                </a>
+                <a class="mmenu" href="#my-menu"><i class="fas fa-3x fa-bars"></i></a>
+                <nav id="my-menu">
+                    <ul>
+                        <li>
+                            <a href="../../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="../about.html">About me</a>
+                        </li>
+                        <li>
+                            <a href="../photography.html">Photography</a>
+                        </li>
+                        <li>
+                            <a href="../contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+
+
+        <!--SINGLE ETSY PROJECT-->
+        <main class="portfolio-page">
+
+            <section class="grid-item-2-etsy">
+                <img src="../../img/dreadradar.jpg" alt="Test">
+            </section>
+            <section class="grid-item-3-etsy">
+                <h2>Project Title</h2>
+                <p>Dreadradar Etsy shop</p>
+            </section>
+            <section class="grid-item-4-etsy">
+                <h2>Project Type</h2>
+                <p>Etsy store creation.</p>
+            </section>
+            <section class="grid-item-4-etsy">
+                <h2>Project Date</h2>
+                <p>May 2020</p>
+            </section>
+            <section class="grid-item-5-etsy">
+                <h2>Project Description</h2>
+                <p>The client asked to develop an Etsy store based in Ukraine, but with the intention to sell worldwide. Create a successful visual appearance and tags, so the client can always find their products. </p>
+            </section>
+            <section class="grid-item-6-etsy">
+                <h2>Project Client</h2>
+                <p>Small dreadlocks production company based in Ukraine and Germany.</p>
+            </section>
+
+        </main>
+        <section class="grid-item-7-etsy">
+            <footer>
+                <p>Copyright 2022. All rights reserved.</p>
+            </footer>
+        </section>
+    </article>
+     <!--Up button-->
+    <a class="top-button" href="#top"><i class="fas fa-3x fa-chevron-circle-up"></i></a>
+
+    <!-- including menu script-->
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", () => {
+                const menu = new MmenuLight(
+                    document.querySelector("#my-menu"),
+                    "(max-width: 768px)"
+                );
+
+                const navigator = menu.navigation();
+                const drawer = menu.offcanvas();
+
+                document.querySelector("a[href='#my-menu']")
+                    .addEventListener("click", (evnt) => {
+                        evnt.preventDefault();
+                        drawer.open();
+                    });
+            }
+        );
+    </script>
+</body>

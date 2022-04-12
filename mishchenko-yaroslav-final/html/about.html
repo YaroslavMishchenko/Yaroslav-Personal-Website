@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Yaroslav Website">
+    <!--Page keywords-->
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <!--Author of the code-->
+    <meta name="author" content="Mishchenko Yaroslav">
+    <meta http-equiv="refresh" content="30">
+    <!-- Lets make mobile version looks cool-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize CSS install-->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/0eeec2859d.js" crossorigin="anonymous"></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--MMENU-->
+    <script src="../js/mmenu-light.js"></script>
+
+    <link rel="stylesheet" href="../css/mmenu-light.css">
+
+    <!--END OF MMENU-->
+
+    <title>Yaroslav Mishchenko Resume</title>
+</head>
+
+<body class="page-2-body">
+    <!--Header where you go back to the page 1-->
+    <header>
+        <a href="../index.html">
+            <img class="logo" src="../img/Artboard 1.png" alt="logo">
+        </a>
+        <a class="mmenu" href="#my-menu"><i class="fas fa-3x fa-bars"></i></a>
+        <nav id="my-menu">
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="portfolio/index.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="photography.html">Photography</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="top">
+        <!--Article 1-->
+        <article class="page-2">
+            <h2>About Yaroslav</h2>
+            <p> <img class="about-1" src="../img/yaroslav-dubai.jpg" alt="Yaroslav Picture">My name is Yaroslav
+                Mishchenko.
+                I'm from Ukraine, was born and raised in the village till I was 17 y.o. Afterward, I moved to a 300.000
+                population city called Sumy where spent my next 6 years receiving Bachelors's and Masters's degrees. I
+                wasn't the best student as I missed a bunch of classes while doing Work and Travel in the USA, some
+                programs in Germany and just traveling abroad every possible moment. </p>
+
+
+        </article>
+        <!--Article 2-->
+        <article class="page-2">
+            <h2>Hobbies and Interests</h2>
+            <p><img class="about-2" src="../img/yaroslav-aurora.JPG" alt="Yaroslav Picture">I'm easily getting inspired
+                by two things: trips and anything new in my life. It's always interesting to try a new job, food, place
+                to live and the list of things is never stopping. Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Numquam suscipit dolor rerum aspernatur soluta ducimus aut necessitatibus voluptatibus ab magnam,
+                esse dignissimos magni sed dolores cum porro accusamus! Eos, tenetur?</p>
+            </p>
+
+
+        </article>
+        <!--Contact me-->
+
+    </main>
+    <!--Simple footer-->
+    <footer>
+        <p>Copyright 2022. All rights reserved.
+       
+        </p>
+    </footer>
+    <!--Up button-->
+    <a class="top-button" href="#top"><i class="fas fa-3x fa-chevron-circle-up"></i></a>
+
+    <!--MMENU JS-->
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", () => {
+                const menu = new MmenuLight(
+                    document.querySelector("#my-menu"),
+                    "(max-width: 768px)"
+                );
+
+                const navigator = menu.navigation();
+                const drawer = menu.offcanvas();
+
+                document.querySelector("a[href='#my-menu']")
+                    .addEventListener("click", (evnt) => {
+                        evnt.preventDefault();
+                        drawer.open();
+                    });
+            }
+        );
+    </script>
+</body>
+
+</html>

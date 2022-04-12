@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Yaroslav Website">
+    <!--Page keywords-->
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <!--Author of the code-->
+    <meta name="author" content="Mishchenko Yaroslav">
+    <meta http-equiv="refresh" content="30">
+    <!-- Lets make mobile version looks cool-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize CSS install-->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/0eeec2859d.js" crossorigin="anonymous"></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--Halkabox CSS-->
+    <link rel="stylesheet" href="../css/halkaBox.min.css">
+
+    <!--Halkabox JS plugin-->
+    <script src="../js/halkaBox.min.js"></script>
+
+    <!--MMENU-->
+    <script src="../js/mmenu-light.js"></script>
+
+    <link rel="stylesheet" href="../css/mmenu-light.css">
+
+    <!--END OF MMENU-->
+
+    <title>Yaroslav Mishchenko Resume</title>
+</head>
+
+<body class="page-2-body">
+    <!--Header where you go back to the page 1-->
+    <header>
+        <a href="../index.html">
+            <img class="logo" src="../img/Artboard 1.png" alt="logo">
+        </a>
+        <a class="mmenu" href="#my-menu"><i class="fas fa-3x fa-bars"></i></a>
+        <nav id="my-menu">
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="portfolio/index.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-photography">
+
+        <section class="row">
+            <section class="column">
+                <!--Coloumn 1-->
+                <a href="../img/yaroslav-photo-1.jpg" class="gallery1" title="Georgia 2017"><img
+                        src="../img/yaroslav-photo-1.jpg"></a>
+                <a href="../img/yaroslav-photo-2.jpg" class="gallery1" title="Georgia 2017"><img
+                        src="../img/yaroslav-photo-2.jpg"></a>
+                <a href="../img/yaroslav-photo-3.jpg" class="gallery1" title="Moscow 2016"><img
+                        src="../img/yaroslav-photo-3.jpg"></a>
+            </section>
+
+            <section class="column">
+                <!--Coloumn 2-->
+                <a href="../img/yaroslav-photo-6.jpg" class="gallery1" title="Spain 2020"><img
+                        src="../img/yaroslav-photo-6.jpg"></a>
+                <a href="../img/yaroslav-photo-5.jpg" class="gallery1" title="Denmark 2019"><img
+                        src="../img/yaroslav-photo-5.jpg"></a>
+                <a href="../img/yaroslav-photo-4.jpg" class="gallery1" title="Denmark 2019"><img
+                        src="../img/yaroslav-photo-4.jpg"></a>
+            </section>
+
+            <section class="column">
+                <!--Coloumn 3-->
+                <a href="../img/yaroslav-photo-7.jpg" class="gallery1" title="Portugal 2020"><img
+                        src="../img/yaroslav-photo-7.jpg"></a>
+                <a href="../img/yaroslav-photo-8.jpg" class="gallery1" title="Dubai 2019"><img
+                        src="../img/yaroslav-photo-8.jpg"></a>
+                <a href="../img/yaroslav-photo-9.jpg" class="gallery1" title="Armenia 2020"><img
+                        src="../img/yaroslav-photo-9.jpg"></a>
+            </section>
+
+            <section class="column">
+                <!--Coloumn 3-->
+                <a href="../img/yaroslav-splider-3.jpg" class="gallery1" title="Finland 2018"><img
+                        src="../img/yaroslav-splider-3.jpg"></a>
+                <a href="../img/yaroslav-splider-2.jpg" class="gallery1" title="Georgia 2017"><img
+                        src="../img/yaroslav-splider-2.jpg"></a>
+                <a href="../img/yaroslav-splider-1.jpg" class="gallery1" title="Moscow 2017"><img
+                        src="../img/yaroslav-splider-1.jpg"></a>
+            </section>
+        </section>
+
+        <section>
+
+
+
+        </section>
+
+
+
+    </main>
+    <!--Simple footer-->
+    <footer>
+        <p>Copyright 2022. All rights reserved.</p>
+    </footer>
+     <!--Up button-->
+    <a class="top-button" href="#top"><i class="fas fa-3x fa-chevron-circle-up"></i></a>
+
+    <!--JS SCRIPTS-->
+
+    <!--Halkabox-->
+    <script>
+        halkaBox.run("gallery1");
+    </script>
+
+    <!--MMENU JS-->
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", () => {
+                const menu = new MmenuLight(
+                    document.querySelector("#my-menu"),
+                    "(max-width: 768px)"
+                );
+
+                const navigator = menu.navigation();
+                const drawer = menu.offcanvas();
+
+                document.querySelector("a[href='#my-menu']")
+                    .addEventListener("click", (evnt) => {
+                        evnt.preventDefault();
+                        drawer.open();
+                    });
+            }
+        );
+    </script>
+
+</body>
+
+</html>

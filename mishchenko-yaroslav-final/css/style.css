@@ -1,0 +1,892 @@
+/*
+Color Scheme:
+
+#d7ecf - light blue;
+#002249 - dark blue;
+#dee5ed - gray/white;
+#424345 - gray/black.
+
+------------------------------------MOBILE CSS FIRST---------------------------------------
+*/
+
+/* FONTS STYLES */
+
+/* BOX MODEL CODE */
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+
+}
+
+h1,
+h2,
+h3,
+figcaption {
+
+    font-family: 'Cabin', Verdana, Geneva, Tahoma, sans-serif;
+    color: #002249;
+    text-shadow: 1px 1px #dee5ed;
+}
+
+
+h4,
+li,
+p,
+time,
+legend,
+label,
+select {
+    font-family: 'Mukta', Georgia, 'Times New Roman', Times, sans-serif;
+
+}
+
+/* END OF FONTS STYLES */
+
+/* Lets make images always responsive! */
+img,
+object {
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+/* Lets make images always responsive! */
+
+/*
+
+Pseudo classes i can use for "nav ul li a"
+
+:link 
+
+:visited
+
+:hover
+
+:active
+
+
+*/
+
+header {
+
+    padding-top: 1rem;
+    background-color: #d7ecf1;
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+   
+    
+
+}
+
+
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+    
+}
+
+nav a {
+    text-decoration: underline;
+    color: #002249;
+    font-size: 1.5rem;
+    
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #002249;
+    font-size: 1.7rem;
+    
+}
+
+header nav ul {
+    margin-top: -1rem;
+    margin-bottom: -4rem;
+    background-color: #d7ecf1;
+    width: 100%;
+    
+
+}
+
+.main-photo {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.main-photo img {
+    max-width: 60%;
+    border-radius: 10%;
+}
+
+figcaption {
+    font-size: 1.3rem;
+}
+
+
+
+
+main #background-picture-1 {
+    background-image: url(../img/typed-text-says-work.jpg);
+    background-position: center;
+    height: 15rem;
+    max-width: 100%;
+    margin-top: 0rem;
+}
+
+#background-picture-2 {
+    background-image: url(../img/book-laid-in-focus-open-on-a-wooden-table.jpg);
+    background-position: center;
+    height: 15rem;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+#background-picture-2 h2 {
+    margin-top: 4.5rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    padding-bottom: 0.5rem;
+    background-color: #d7ecf1;
+    text-align: center;
+    clear: both;
+
+}
+
+footer p {
+    padding-top: 1.5rem;
+    padding-left: 0;
+    color: #002249;
+    ;
+}
+
+#reference {
+
+    text-align: center;
+}
+
+#reference blockquote {
+    padding: 1rem;
+    background-color: #24787b;
+    color: white;
+    position: relative;
+}
+
+blockquote i {
+
+    position: absolute;
+    right: -1rem;
+    top: -2rem;
+}
+
+#work-exp h3,
+h4,
+p,
+time {
+
+    padding-left: 2rem;
+}
+
+#educ-exp h3,
+h4,
+p,
+time {
+
+    padding-left: 2rem;
+}
+
+#contact {
+    text-align: center;
+    color: black;
+}
+
+#contact li {
+    list-style: none;
+    margin-left: 1rem;
+    display: inline-block;
+    text-align: left;
+    color: black;
+
+}
+
+
+#contact ul {
+
+    padding: 0;
+}
+
+i {
+
+    color: #002249;
+
+}
+
+#contact i:hover {
+
+    font-size: 6rem;
+}
+
+h3 {
+
+    text-decoration: underline;
+}
+
+hr {
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.page-2 h2 {
+
+    margin-left: 2rem;
+
+}
+
+.page-2 img {
+    max-width: 90%;
+    margin-left: 2rem;
+
+
+
+}
+
+.page-2 p {
+
+    margin-right: 2rem;
+}
+
+.page-2 h2 {
+
+    margin-top: 4rem;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+#work-exp p {
+
+    background-color: #dee5ed;
+}
+
+#educ-exp p {
+
+    background-color: #dee5ed;
+}
+
+.top-button {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 9999;
+}
+
+cite {
+
+    position: relative;
+    left: 6rem;
+}
+
+.emo-wrap {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+/* SERVICES PAGE */
+
+.services h2 {
+
+    text-align: center;
+}
+
+.card {
+
+    padding-top: ;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 19rem;
+    margin: 3rem;
+    padding: 1rem;
+    background: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.services .flex-parent {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+/* CONTACT PAGE */
+
+.contact-background-picture-1 {
+    background-image: url(../img/simple-blue-typewriter.jpg);
+    height: 15rem;
+    width: 100%;
+    margin-top: 0rem;
+    background-size: cover;
+    background-position: fixed;
+}
+
+.contact-header {
+
+    margin-top: -11.5rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    text-shadow: 4px 4px 3px rgba(10, 0, 0, 0.3);
+
+}
+
+/* CONTACT FORM */
+form {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 0.1rem;
+    max-width: 25rem;
+    background-color: #24787b;
+    box-shadow: 5px 10px #888888;
+    margin: 0 auto;
+    margin-top: 7rem;
+
+}
+
+form input,
+legend,
+label,
+textarea,
+select {
+
+    margin-left: 2rem;
+}
+
+form,
+legend,
+label {
+
+    color: white;
+    ;
+}
+
+#contact-page ul li {
+
+    text-decoration: none;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 2rem;
+
+}
+
+#contact-page h2 {
+
+    text-align: center;
+}
+
+iframe {
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: -1.5rem;
+    display: none;
+}
+
+.button {
+
+    background-color: lightslategrey;
+    color: white;
+}
+
+/* END OF CONTACT PAGE */
+
+.portfolio-page img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+
+
+
+/*PHOTOGRAPHY PAGE */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.main-photography {
+    padding-top: 3rem;
+}
+
+
+/*-------------------------------------------------------*/
+
+/*SPLIDER*/
+
+.splide {
+    z-index: 9;
+
+
+}
+
+
+
+/* MMENU */
+.mmenu {
+    display: block;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    text-align: right;
+    padding-right: 1rem;
+
+
+}
+
+/* PORTFILIO PAGE */
+
+.portfolio {
+
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.portfolio-page {
+
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-row-gap: 1rem;
+}
+
+.grid-item-1 {
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+.grid-item-2 {
+    background-color: orange;
+    text-align: center;
+}
+
+.grid-item-3 {
+    background-color: lightgreen;
+    text-align: center;
+}
+
+.grid-item-4 {
+    background-color: lightpink;
+    text-align: center;
+}
+
+.grid-container i {
+
+    margin-top: 1rem;
+
+}
+
+
+
+header img { 
+
+
+height: 50px;
+width: 50px;
+}
+
+
+
+
+/***************************************************
+                    MEDIA QUERIES
+LANDSCAPE MOBILE AND PORTRAIT TABLET
+***************************************************/
+@media only screen and (min-width: 480px) {
+
+    cite {
+
+        position: relative;
+        left: 6rem;
+    }
+
+    p,
+    li,
+    h3,
+    h4,
+    time,
+    label,
+    input,
+    select,
+    textarea {
+
+        font-size: 1.4rem;
+    }
+
+    h2 {
+
+        font-size: 2.2rem;
+    }
+
+    iframe {
+        display: none;
+
+    }
+}
+
+
+/***************************************************
+    RETINA PORTRAIT TABLET, LANDSCAPE TABLETS AND NARROW DESKTOP
+    ***************************************************/
+@media only screen and (min-width: 768px) {
+
+    p,
+    li,
+    h3,
+    h4,
+    time,
+    label,
+    input,
+    select,
+    textarea {
+
+        font-size: 1.2rem;
+    }
+
+    h2 {
+
+        font-size: 2.8rem;
+    }
+
+    iframe {
+        display: initial;
+
+    }
+
+    #contact-page {
+
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        float: right;
+        clear: right;
+        margin-top: 4rem;
+        margin-right: 4rem;
+
+    }
+
+    form {
+        float: left;
+        clear: left;
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+    }
+
+    .services .flex-parent {
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .mmenu {
+
+        display: none;
+    }
+
+    .splide {
+        z-index: 9;
+        margin-top: 4rem;
+    }
+
+    .portfolio-page, .portfolio {
+
+        margin-top: 8rem;
+    }
+
+    .grid-container {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 50%;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+
+    .grid-item-1 {
+
+        text-align: center;
+    }
+
+    .grid-item-2 {
+
+        text-align: center;
+    }
+
+    .grid-item-3 {
+
+        text-align: center;
+    }
+
+    .grid-item-4 {
+
+        text-align: center;
+    }
+
+    .grid-container i {
+
+        margin-top: 1rem;
+
+    }
+
+    .grid-item-1-etsy {
+        grid-area: header;
+    }
+
+    .grid-item-2-etsy {
+        grid-area: picture;
+
+    }
+
+    .grid-item-3-etsy {
+        grid-area: item-3;
+    }
+
+    .grid-item-4-etsy {
+        grid-area: item-4;
+    }
+
+    .grid-item-5-etsy {
+        grid-area: item-5;
+    }
+
+    .grid-item-6-etsy {
+        grid-area: item-6;
+    }
+
+    .grid-item-7-etsy {
+        grid-area: footer;
+    }
+
+    .portfolio-page {
+
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 2rem;
+    }
+
+    .portfolio-page h2 {
+        font-size: 2rem;
+       
+    }
+
+    .portfolio-page p {
+        margin-top: -1rem;
+        margin-bottom: -1rem;
+        text-decoration:solid
+       
+    }
+
+    .contact-background-picture-1 {
+
+        margin-top: 4rem;
+
+    }
+        /***************************************************
+    RETINA LANDSCAPE TABLETS AND STANDARD DESKTOP
+    ***************************************************/
+
+        @media only screen and (min-width: 960px) {
+
+            cite {
+
+                position: relative;
+                left: 14rem;
+            }
+
+            .page-2 img {
+                max-width: 60%;
+                padding: 1rem;
+                margin-top: -1rem;
+            }
+
+            .about-1 {
+                float: left;
+
+            }
+
+            .about-2 {
+                float: right;
+            }
+
+            #contact {
+                clear: both;
+            }
+
+            .page-2-body p {
+
+                clear: both;
+            }
+
+            p,
+            li,
+            h3,
+            h4,
+            time,
+            label,
+            input,
+            select,
+            textarea {
+
+                font-size: 1rem;
+            }
+
+            h2 {
+
+                font-size: 3.2rem;
+            }
+
+            iframe {
+                display: initial;
+
+            }
+
+            .page-2 h2 {
+
+                margin-top: 7rem;
+                clear: left;
+            }
+
+            #contact-page {
+
+                text-decoration: none;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                float: right;
+                clear: right;
+                margin-top: 4rem;
+                margin-right: 10rem;
+
+            }
+
+            form {
+                float: left;
+                clear: left;
+                margin-bottom: 3rem;
+                margin-left: 4rem;
+                   }
+
+        .mmenu {
+
+        margin-bottom: 15rem;
+        }
+
+        /***************************************************
+    WIDESCREEN DESKTOP
+    ***************************************************/
+
+        @media only screen and (min-width: 1160px) {
+
+            cite {
+
+                position: relative;
+                left: 22rem;
+            }
+
+            p,
+            li,
+            h3,
+            h4,
+            time,
+            label,
+            input,
+            select,
+            textarea {
+
+                font-size: 1.1rem;
+            }
+
+            h2 {
+
+                font-size: 3.4rem;
+            }
+
+            iframe {
+                display: initial;
+            }
+
+        }
